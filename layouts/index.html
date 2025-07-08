@@ -1,6 +1,19 @@
 {{ define "main" }}
-  {{ .Content }}
-  <div class="terminal-nav">
-    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<div class="landing-page-container">
+  <div style="min-height: 5em;">
+    {{ with .Site.Params.author }}
+    <strong>{{.}}</strong>
+    {{ end }}
+    <br>
+    {{ with .Site.Params.authorNativeName }}
+    <span class="text-muted"> {{.}} </span>
+    {{ end }}
   </div>
+  <div>
+    {{ .Content }}
+  </div>
+</div>
+<div class="terminal-nav">
+  {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+</div>
 {{ end }}
