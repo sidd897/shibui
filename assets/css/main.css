@@ -12,12 +12,12 @@
   --spacing-lg: calc(var(--spacing-base) * 2);
 
   /* Colors */
-  --color-bg-primary: #f6eee3;
-  --color-bg-secondary: #eee7d7;
+  --color-bg-primary: #FFFAF3;
+  --color-bg-secondary: #F2E9E1;
   --color-border: #e5decf;
-  --color-text-primary: #000;
-  --color-text-muted: #888;
-  --color-selection-bg: #e5decf;
+  --color-text-primary: #575279;
+  --color-text-muted: #9893A5;
+  --color-selection-bg: #F4EDE8;
   --color-selection-code-bg: #e0c9a6;
 
   /* Layout */
@@ -84,7 +84,8 @@ html {
 }
 
 body {
-  font: var(--font-size-base) / var(--spacing-base) var(--font-family-mono);
+    font: var(--font-size-base) / var(--spacing-base) var(--font-family-mono);
+    color: var(--color-text-primary);
   background: var(--color-bg-primary);
   min-height: 100%;
   display: grid;
@@ -236,7 +237,7 @@ p > code ::selection {
 .path-nav li {
   display: flex;
   align-items: center;
-  color: #888;
+  color: #9893A5;
   flex-shrink: 0;
   max-width: 200px; /* Limit maximum width on small screens */
 }
@@ -255,7 +256,7 @@ p > code ::selection {
 }
 
 .path-nav li.current a {
-  color: #000;
+  color: #575279;
 }
 
 .path-nav a:hover {
@@ -267,12 +268,12 @@ p > code ::selection {
 }
 
 .back-link {
-  color: #888;
+  color: #9893A5;
   border-bottom: none;
 }
 
 .back-link:hover {
-  color: #000;
+  color: #575279;
   text-decoration: none;
 }
 
