@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    {{ partialCached "head/css.html" . }}
+    {{ partialCached "head/favicon.html" . }}
+    <title>404 Page Not Found</title>
+  </head>
+  <body>
+    <p></p> <!-- Dummy paragraph so that the below text is in the same place as the body of index.html -->
+    <div>
+      <h1>Oops! Page not found.</h1>
+      <p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+      <p>You can try searching for it or go back to the <a href="/">homepage</a>.</p>
+    </div>
+  </body>
+</html>
